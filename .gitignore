@@ -1,0 +1,8 @@
+lib/
+bower_components/
+node_modules/
+.sass-cache/
+# dist/assets/videos/
+# dist/assets/css/
+*.map
+# *.html

@@ -1,0 +1,291 @@
+@import "variables";
+@import "mediaqueries";
+.footer-container {
+    background-color: #ebf5ff;
+}
+
+.footer-social-section {
+    display: flex;
+    padding-top: 95px;
+    padding-bottom: 85px;
+    @include layout(1023) {
+        padding-top: 65px;
+        padding-bottom: 55px;
+    }
+    @include layout(767) {
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-inputemial-section {
+    width: 50%;
+    @include layout(767) {
+        width: inherit;
+    }
+}
+
+.footer-socail-icon-block {
+    width: 50%;
+    /* align-self: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @include layout(767) {
+        width: inherit;
+    }
+}
+
+.text-of-datajourney {
+    font-size: 36px; // max-width: 440px;
+    width: 100%;
+    line-height: 45px;
+    font-family: $rob-reg;
+    color: $cblue;
+    @include layout(1023) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @include layout(767) {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.text-free-consultation {
+    font-size: 36px;
+    font-family: $rob-reg;
+    color: $cgray;
+    padding: 22px 0px 40px 0px;
+    @include layout(1023) {
+        font-size: 30px;
+    }
+    @include layout(767) {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 20px 0px 25px 0px;
+    }
+}
+
+.company-email {
+    display: flex;
+    justify-content: space-between;
+    background-color: $cwhite;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.24); // width: 100%;
+    max-width: 572px;
+    border-radius: 20px;
+    padding: 0px 0px 0px 18px;
+    @include layout(1023) {
+        border-radius: 12px;
+    }
+    @include layout(767) {
+        border-radius: 12px;
+        padding: 0;
+        background-color: inherit;
+        box-shadow: none;
+        flex-direction: column;
+        max-width: inherit;
+    }
+    input {
+        font-size: 24px;
+        color: #4f4f4f;
+        padding: 0;
+        width: inherit;
+        @include layout(1023) {
+            font-size: 18px;
+        }
+        @include layout(767) {
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff; // box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.24);
+        }
+        &::placeholder {
+            color: $cblue;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-family: $lat-bld;
+            opacity: 1;
+            @include layout(1023) {
+                font-size: 18px;
+            }
+        }
+        &:-ms-input-placeholder {
+            color: $cblue; // color: rgba(26, 26, 29, 0.5);
+            text-transform: uppercase;
+            opacity: 1;
+        }
+        &::-ms-input-placeholder {
+            color: $cblue; // color: rgba(26, 26, 29, 0.5);
+            text-transform: uppercase;
+            opacity: 1;
+        }
+    }
+    button {
+        border-radius: 18px;
+        background-color: $cblue;
+        color: $cwhite;
+        margin: 3px;
+        font-size: 22px;
+        white-space: nowrap;
+        padding: 16px 23px;
+        font-family: $lat-bld;
+        @include layout(1199) {
+            font-size: 18px;
+            padding: 14px 20px;
+            // border-radius: 15px;
+        }
+        @include layout(1023) {
+            font-size: 18px;
+            padding: 12px 18px;
+            border-radius: 10px;
+        }
+        @include layout(767) {
+            color: $cwhite;
+            background-color: $corange;
+            width: 117px;
+            font-size: 15px;
+            padding: 8px 18px;
+            align-self: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.follows-text {
+    width: 240px;
+    font-size: 26px;
+    font-family: $lat-bld;
+    color: $cblue;
+    @include layout(1023) {
+        width: 190px;
+        font-size: 20px;
+    }
+    @include layout(767) {
+        width: inherit;
+        color: $cgray;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+.socail-icons {
+    display: flex;
+    padding-top: 25px;
+    @include layout(1023) {
+        padding-top: 20px;
+    }
+    @include layout(767) {
+        padding-top: 15px;
+    }
+    a {
+        margin-right: 20px;
+        @include layout(1023) {
+            margin-right: 15px;
+        }
+        @include layout(767) {
+            margin-right: 12px;
+        }
+        img {
+            width: 67px;
+            height: 67px;
+            border-radius: 50%;
+            @include layout(1023) {
+                width: 50px;
+                height: 50px;
+            }
+            @include layout(767) {
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+    a:last-child {
+        margin-right: 0px;
+    }
+}
+
+.footer-details-blocks {
+    background-color: #204981;
+}
+
+.footer-deatils-section {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.services-and-links {
+    display: flex;
+    justify-content: space-between;
+    @include layout(767) {
+        flex-direction: column;
+    }
+}
+
+.service-name-blocks {
+    line-height: 28px;
+    @include layout(767) {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
+
+.service-type {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: $lat-bld;
+    font-size: 20px;
+    @include layout(767) {
+        color: $cwhite;
+    }
+}
+
+.service-type-link {
+    a {
+        color: rgba(105, 184, 243, 0.6);
+        font-size: 18px;
+        font-family: $lat-reg;
+        @include layout(767) {
+            color: $cblue;
+        }
+    }
+}
+
+.gmail.address-section {
+    color: rgba(105, 184, 243, 0.6);
+    font-size: 18px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    @include layout(767) {
+        color: $cblue;
+    }
+    .copy-icon {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+        fill: rgba(105, 184, 243, 0.6);
+        @include layout(767) {
+            fill: $cblue;
+        }
+    }
+    a {
+        color: rgba(105, 184, 243, 0.6);
+        padding-left: 5px;
+        @include layout(767) {
+            color: $cblue;
+        }
+    }
+    @include layout(767) {
+        justify-content: center;
+    }
+}
+
+.footer-logo {
+    display: none;
+    margin: 10px 0;
+    @include layout(767) {
+        display: flex;
+        justify-content: center;
+    }
+}

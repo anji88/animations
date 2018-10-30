@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'lato-light';
+    src: url('../fonts/lato-light.ttf');
+}
+
+@font-face {
+    font-family: 'lato-thin';
+    src: url('../fonts/lato-thin.ttf');
+}
+
+@font-face {
+    font-family: 'lato-regular';
+    src: url('../fonts/lato-regular.ttf');
+}
+
+@font-face {
+    font-family: 'lato-bold';
+    src: url('../fonts/lato-bold.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Light';
+    src: url('../fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Thin';
+    src: url('../fonts/RobotoSlab-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Regular';
+    src: url('../fonts/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Bold';
+    src: url('../fonts/RobotoSlab-Bold.ttf');
+}
+
+$fs:16px;
+$lat-lt: "lato-light";
+$lat-th: "lato-thin";
+$lat-reg: "lato-regular";
+$lat-bld: "lato-bold";
+$rob-lt: "RobotoSlab-Light";
+$rob-th: "RobotoSlab-Thin";
+$rob-reg: "RobotoSlab-Regular";
+$rob-bld: "RobotoSlab-Bold";
